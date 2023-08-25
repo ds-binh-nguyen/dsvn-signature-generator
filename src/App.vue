@@ -18,7 +18,9 @@
       <input class="input" v-model="email" id="email">
     </div>
   </div>
-  <button @click="copySignature">Sao chép Chữ ký</button>
+  <div class="center">
+    <button @click="copySignature">Sao chép Chữ ký</button>
+  </div>
   <table class="signature-section" id="signature-section">
     <tbody>
       <tr>
@@ -159,7 +161,7 @@ const copySignature = () => {
 
   .main {
     border-bottom:1px solid rgb(20,59,115);
-    margin-bottom: 50px;
+    margin: 0 auto;
     width: 50%;
   }
 
@@ -217,5 +219,12 @@ const copySignature = () => {
   .icon-info {
     display:block;
     background-color:rgb(20,59,115);
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
   }
 </style>
