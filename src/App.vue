@@ -1,25 +1,24 @@
 <template>
-
-  <div class="unselectable main">
+  <div class="main">
     <div>
-      <label for="fullname">Họ và tên:</label>
+      <label class="label" for="fullname">Họ và tên:</label>
       <input class="input" v-model="fullname" id="fullname">
     </div>
     <div>
-      <label for="role">Chức vụ:</label>
+      <label class="label" for="role">Chức vụ:</label>
       <input class="input" v-model="role" id="role">
     </div>
     <div>
-      <label for="phone_number">Số điện thoại:</label>
+      <label class="label" for="phone_number">Số điện thoại:</label>
       <input class="input" v-model="phone_number" id="phone_number">
     </div>
     <div>
-      <label for="email">Email:</label>
+      <label class="label" for="email">Email:</label>
       <input class="input" v-model="email" id="email">
     </div>
   </div>
   <div class="center">
-    <button @click="copySignature">Sao chép Chữ ký</button>
+    <button class="label" @click="copySignature">Sao chép Chữ ký</button>
   </div>
   <table class="signature-section" id="signature-section">
     <tbody>
@@ -154,9 +153,14 @@ const copySignature = () => {
     color: black;
   }
 
+  .label {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
   .input {
     width: 100%;
-    margin-bottom: 10px;
+    margin: 5px 0 10px;
   }
 
   .main {
