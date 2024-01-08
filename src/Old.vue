@@ -30,16 +30,16 @@
                     <td style="text-align:center">
                       <img :src="companyInfo.logo" alt="diamge-share-logo" width="100" class="main-logo">
                       <a v-if="companyInfo.fanpage" :href="companyInfo.fanpage" class="sub-logo" target="_blank" :data-saferedirecturl="companyInfo.fanpage">
-                        <img src="/img/facebook-icon-2x.webp" alt="facebook" class="sub-logo-img">
+                        <img src="https://i.imgur.com/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
                       </a>
                       <a v-if="companyInfo.linkedin" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
-                        <img src="/img/linkedin-icon-2x.webp" alt="linkedin" class="sub-logo-img">
+                        <img src="https://i.imgur.com/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
                       </a>
                       <a v-if="companyInfo.twitter" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
-                        <img src="/img/twitter-icon-2x.webp" alt="twitter" class="sub-logo-img">
+                        <img src="https://i.imgur.com/uRHrvU4.png" alt="twitter" class="sub-logo-img">
                       </a>
                       <a v-if="companyInfo.instagram" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
-                        <img src="/img/instagram-icon-2x.webp" alt="instagram" class="sub-logo-img">
+                        <img src="https://i.imgur.com/3tgNopu.png" alt="instagram" class="sub-logo-img">
                       </a>
                     </td>
                   </tr>
@@ -115,14 +115,14 @@
     instagram: '',
     twitter: '',
     website: 'https://dimage.vn/',
-    logo: '/img/dsvn-logo.png'
+    logo: 'https://i.imgur.com/DUimh2m.png'
   };
   
   var contactInfo = [
-    { label: 'Phone', value: phone_number.value, type: 'tel', icon: '/img/phone-icon-2x.webp' },
-    { label: 'Email', value: email.value, type: 'email', icon: '/img/email-icon-2x.webp' },
-    { label: 'Website', value: companyInfo.website, type: 'link', icon: '/img/link-icon-2x.webp' },
-    { label: 'Address', value: companyInfo.address, type: 'address', icon: '/img/address-icon-2x.webp' },
+    { label: 'Phone', value: phone_number.value, type: 'tel', icon: 'https://i.imgur.com/5SZWbkX.png' },
+    { label: 'Email', value: email.value, type: 'email', icon: 'https://i.imgur.com/AMP3sZX.png' },
+    { label: 'Website', value: companyInfo.website, type: 'link', icon: 'https://i.imgur.com/qX4L3XC.png' },
+    { label: 'Address', value: companyInfo.address, type: 'address', icon: 'https://i.imgur.com/KxTc7E7.png' },
   ];
   
   watch(phone_number, (newVal) => {
