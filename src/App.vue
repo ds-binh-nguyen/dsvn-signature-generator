@@ -91,6 +91,11 @@
       </tr>
     </tbody>
   </table>
+  <div style="text-align: center">
+    <span class="text-center">Hướng dẫn cách thêm chữ ký vào mail 
+    <a style="font-weight: bold" href="https://support.google.com/mail/answer/8395?hl=vi&co=GENIE.Platform%3DDesktop&oco=0"> tại đây </a>
+    </span>
+  </div>
 </template>
 
 <script setup>
