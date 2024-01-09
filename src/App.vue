@@ -17,7 +17,7 @@
       <input class="input" v-model="email" id="email">
     </div>
   </div>
-  <div class="center">
+  <div class="center m-1">
     <button class="label" @click="copySignature">Sao chép Chữ ký</button>
   </div>
   <table class="signature-section" id="signature-section">
@@ -25,23 +25,25 @@
       <tr>
         <td>
           <td style="vertical-align:top">
-            <table style="margin-top: 10px;">
+            <table class="m-1">
               <tbody>
                 <tr>
-                  <td style="text-align:center">
+                  <td>
                     <img :src="companyInfo.logo" alt="diamge-share-logo" width="100" class="main-logo">
-                    <a v-if="companyInfo.fanpage" :href="companyInfo.fanpage" class="sub-logo" target="_blank" :data-saferedirecturl="companyInfo.fanpage">
-                      <img src="https://i.imgur.com/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
-                    </a>
-                    <a v-if="companyInfo.linkedin" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
-                      <img src="https://i.imgur.com/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
-                    </a>
-                    <a v-if="companyInfo.twitter" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
-                      <img src="https://i.imgur.com/uRHrvU4.png" alt="twitter" class="sub-logo-img">
-                    </a>
-                    <a v-if="companyInfo.instagram" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
-                      <img src="https://i.imgur.com/3tgNopu.png" alt="instagram" class="sub-logo-img">
-                    </a>
+                    <div class="center">
+                      <a v-if="companyInfo.fanpage" :href="companyInfo.fanpage" class="sub-logo" target="_blank" :data-saferedirecturl="companyInfo.fanpage">
+                        <img src="https://i.ibb.co/6RH2xzr/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
+                      </a>
+                      <a v-if="companyInfo.linkedin" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
+                        <img src="https://i.ibb.co/Z1qZkc1/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
+                      </a>
+                      <a v-if="companyInfo.twitter" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
+                        <img src="https://i.ibb.co/dg31Zpq/uRHrvU4.png" alt="twitter" class="sub-logo-img">
+                      </a>
+                      <a v-if="companyInfo.instagram" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
+                        <img src="https://i.ibb.co/93g24m4/3tgNopu.png" alt="instagram" class="sub-logo-img">
+                      </a>
+                    </div>
                   </td>
                 </tr>
               </tbody>
@@ -91,10 +93,11 @@
       </tr>
     </tbody>
   </table>
-  <div style="text-align: center">
-    <span class="text-center">Hướng dẫn cách thêm chữ ký vào mail 
-    <a style="font-weight: bold" href="https://support.google.com/mail/answer/8395?hl=vi&co=GENIE.Platform%3DDesktop&oco=0" target="blank"> tại đây </a>
-    </span>
+  <div class="center m-1">
+    <span>Hướng dẫn cách thêm chữ ký vào mail 
+      <a href="https://support.google.com/mail/answer/8395?hl=vi&co=GENIE.Platform%3DDesktop&oco=0" target="blank"> <b>tại đây</b> </a>
+      và <b>Paste (Ctrl + V)</b> vào hộp nội dung chữ ký
+      </span>
   </div>
 </template>
 
@@ -117,18 +120,18 @@ const companyInfo = {
   address: '11F, Lilama Building 10, 56 To Huu, Trung Van, Nam Tu Liem, Hanoi, Vietnam',
   phone: '02432005576',
   fanpage: 'https://www.facebook.com/DimageShareVietnam/',
-  linked: '',
+  linkedin: '',
   instagram: '',
   twitter: '',
   website: 'https://dimage.vn/',
-  logo: 'https://i.imgur.com/DUimh2m.png'
+  logo: 'https://i.ibb.co/zSjq0ZW/image.png'
 };
 
 var contactInfo = [
-  { label: 'Phone', value: phone_number.value, type: 'tel', icon: 'https://i.imgur.com/5SZWbkX.png' },
-  { label: 'Email', value: email.value, type: 'email', icon: 'https://i.imgur.com/AMP3sZX.png' },
-  { label: 'Website', value: companyInfo.website, type: 'link', icon: 'https://i.imgur.com/qX4L3XC.png' },
-  { label: 'Address', value: companyInfo.address, type: 'address', icon: 'https://i.imgur.com/KxTc7E7.png' },
+  { label: 'Phone', value: phone_number.value, type: 'tel', icon: 'https://i.ibb.co/ZBnbgfv/5SZWbkX.png' },
+  { label: 'Email', value: email.value, type: 'email', icon: 'https://i.ibb.co/524vcjP/AMP3sZX.png' },
+  { label: 'Website', value: companyInfo.website, type: 'link', icon: 'https://i.ibb.co/dGT9hq7/qX4L3XC.png' },
+  { label: 'Address', value: companyInfo.address, type: 'address', icon: 'https://i.ibb.co/G0f3TsG/KxTc7E7.png' },
 ];
 
 watch(phone_number, (newVal) => {
@@ -176,7 +179,9 @@ const copySignature = () => {
 
   .main-logo {
     max-width:100px;
-    display:block
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sub-logo {
@@ -234,6 +239,9 @@ const copySignature = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+  }
+
+  .m-1 {
+    margin: 1.25rem;
   }
 </style>

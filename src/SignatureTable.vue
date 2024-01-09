@@ -10,16 +10,16 @@
                     <td style="text-align:center">
                       <img :src="companyInfo.logo" alt="diamge-share-logo" width="100" class="main-logo">
                       <a v-if="companyInfo.fanpage" :href="companyInfo.fanpage" class="sub-logo" target="_blank" :data-saferedirecturl="companyInfo.fanpage">
-                        <img src="https://i.imgur.com/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
+                        <img src="https://i.ibb.co/6RH2xzr/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
                       </a>
-                      <a v-if="companyInfo.linkedin" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
-                        <img src="https://i.imgur.com/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
+                      <a v-if="companyInfo.linkedin" :href="companyInfo.linkedin" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
+                        <img src="https://i.ibb.co/Z1qZkc1/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
                       </a>
-                      <a v-if="companyInfo.twitter" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
-                        <img src="https://i.imgur.com/uRHrvU4.png" alt="twitter" class="sub-logo-img">
+                      <a v-if="companyInfo.twitter" :href="companyInfo.twitter" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
+                        <img src="https://i.ibb.co/dg31Zpq/uRHrvU4.png" alt="twitter" class="sub-logo-img">
                       </a>
-                      <a v-if="companyInfo.instagram" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
-                        <img src="https://i.imgur.com/3tgNopu.png" alt="instagram" class="sub-logo-img">
+                      <a v-if="companyInfo.instagram" :href="companyInfo.instagram" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
+                        <img src="https://i.ibb.co/93g24m4/3tgNopu.png" alt="instagram" class="sub-logo-img">
                       </a>
                     </td>
                   </tr>
