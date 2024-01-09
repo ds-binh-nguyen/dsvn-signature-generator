@@ -28,22 +28,20 @@
             <table class="m-1">
               <tbody>
                 <tr>
-                  <td>
+                  <td style="text-align: center">
                     <img :src="companyInfo.logo" alt="diamge-share-logo" width="100" class="main-logo">
-                    <div class="center">
-                      <a v-if="companyInfo.fanpage" :href="companyInfo.fanpage" class="sub-logo" target="_blank" :data-saferedirecturl="companyInfo.fanpage">
-                        <img src="https://i.ibb.co/6RH2xzr/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
-                      </a>
-                      <a v-if="companyInfo.linkedin" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
-                        <img src="https://i.ibb.co/Z1qZkc1/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
-                      </a>
-                      <a v-if="companyInfo.twitter" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
-                        <img src="https://i.ibb.co/dg31Zpq/uRHrvU4.png" alt="twitter" class="sub-logo-img">
-                      </a>
-                      <a v-if="companyInfo.instagram" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
-                        <img src="https://i.ibb.co/93g24m4/3tgNopu.png" alt="instagram" class="sub-logo-img">
-                      </a>
-                    </div>
+                    <a v-if="companyInfo.fanpage" :href="companyInfo.fanpage" class="sub-logo" target="_blank" :data-saferedirecturl="companyInfo.fanpage">
+                      <img src="https://i.ibb.co/6RH2xzr/pN5ZdYD.png" alt="facebook" class="sub-logo-img">
+                    </a>
+                    <a v-if="companyInfo.linkedin" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.linkedin">
+                      <img src="https://i.ibb.co/Z1qZkc1/2xOKI0F.png" alt="linkedin" class="sub-logo-img">
+                    </a>
+                    <a v-if="companyInfo.twitter" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.twitter">
+                      <img src="https://i.ibb.co/dg31Zpq/uRHrvU4.png" alt="twitter" class="sub-logo-img">
+                    </a>
+                    <a v-if="companyInfo.instagram" :href="companyInfo.fanpage" class="sub-logo ml-5" target="_blank" :data-saferedirecturl="companyInfo.instagram">
+                      <img src="https://i.ibb.co/93g24m4/3tgNopu.png" alt="instagram" class="sub-logo-img">
+                    </a>
                   </td>
                 </tr>
               </tbody>
