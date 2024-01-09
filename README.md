@@ -1,2 +1,2 @@
 # Visit site:
-- [DSVN SIGNATURE GENERATOR](https://ds-binh-nguyen.github.io/dsvn-signature-generator/)
+- <a href="https://ds-binh-nguyen.github.io/dsvn-signature-generator/" target="_blank">DSVN SIGNATURE GENERATOR</a>
