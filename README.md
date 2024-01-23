@@ -1,4 +1,4 @@
-# Vite Vue Starter
+# DSVN Signature Generator
 
 This is a project template using [Vite](https://vitejs.dev/). It requires [Node.js](https://nodejs.org) v12+.
 
